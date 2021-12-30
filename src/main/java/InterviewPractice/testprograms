@@ -1,0 +1,33 @@
+ int[] arr = {4, 5, 4, 5, 6, 8, 6, 8,18, 6, 4, 5,10};
+        calculateArrayElementOccurrence(arr);
+    }
+
+
+
+    public static void calculateArrayElementOccurrence(int [] arr) throws IndexOutOfBoundsException {
+        try {
+
+            ArrayList<Integer> arlist = new ArrayList<Integer>();
+            int arlength = arr.length;
+            for (int i = 0; i < arlength; i++) {
+
+                int count = 0;
+                if (!arlist.contains(arr[i])) {
+
+                    arlist.add(arr[i]);
+                    count++;
+                    if (i != arlength - 1) {
+                        for (int j = i + 1; j < arlength; j++) {
+                            if (arr[i] == arr[j]) {
+                                count++;
+                            }
+                        }
+                    }
+                    System.out.println("Occurrence of"+ arr[i] +"is" + count);
+                }
+            }
+        } catch (ArrayIndexOutOfBoundsException e) {
+            e.printStackTrace();
+        }
+    }
+}
