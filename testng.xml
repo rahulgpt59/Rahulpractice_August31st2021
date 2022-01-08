@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite" >
+    <test verbose="2" preserve-order="true" name="C:/Rahul Healthedge/Rahul Laptop backup_December 16th/Healthedge/2020/ProductTeam_Apache/SeleniumPracticeAgain_August31st2021/src/main/java/SeleniumOnly" parallel="methods" thread-count="5">
+
+        <classes>
+            <class name="TestNGPracticePackage.TestNgPractice">
+                <methods>
+
+                    <exclude name="test5"></exclude>
+                </methods>
+            </class>
+
+
+        </classes>
+    </test>
+    <test name="Groups">
+    <groups>
+        <run>
+            <exclude name="Smoke">
+                
+            </exclude>
+        </run>
+    </groups>
+        <classes>
+            <class name="TestNGPracticePackage.TestNgPractice">
+                <methods>
+                    <exclude name="test3"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="TestNgAnnotations">
+
+        <classes>
+            <class name="TestNGPracticePackage.TestNgAnnotationsPractice">
+
+
+            </class>
+            <class name="TestNGPracticePackage.TestNgPractice"></class>
+        </classes>
+
+        
+    </test>
+
+
+
+</suite>

@@ -11,10 +11,10 @@ import java.util.concurrent.TimeUnit;
 
 public class ActionPractice {
     public static void main(String[] args) throws InterruptedException{
-        actionPractice();
+        actionMoveToElementPractice();
 
     }
-    public static void actionPractice() throws InterruptedException {
+    public static void actionMoveToElementPractice() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         WebDriver d = new ChromeDriver();
         //d.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));

@@ -30,6 +30,7 @@ public class TestNgannotationsValidation
         System.out.println("Main test");
     }
 
+
     //after annotations
     @AfterSuite
     public void afterSuite()
@@ -51,4 +52,5 @@ public class TestNgannotationsValidation
     {
         System.out.println("after method");
     }
+
 }
